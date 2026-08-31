@@ -4,12 +4,16 @@ A public recovery base for talking to MySubaru / STARLINK from Grok Bot over
 stdio. No secrets live here. No VIN, no PIN, no passwords, no device ids.
 
 This is a **local-first** MCP: your Grok Bot computer talks to the unofficial
-MySubaru API through [`subarulink`](https://pypi.org/project/subarulink/0.7.19/).
-There is no extra SaaS in the middle.
+MySubaru API through [G-Two/subarulink](https://github.com/G-Two/subarulink)
+(`subarulink` 0.7.19 on PyPI). There is no extra SaaS in the middle.
 
-`subarulink` is reverse-engineered from the MySubaru mobile app and is
-**Apache-2.0**. This repo's scripts and docs are **MIT**, Copyright 2026
-Elder Lira. Not affiliated with Subaru of America or Subaru Corporation.
+**This project is not affiliated with, endorsed by, or supported by Subaru,
+Subaru of America, Subaru Corporation, or STARLINK.** STARLINK and MySubaru
+are trademarks of their owners.
+
+The Python client is [G-Two/subarulink](https://github.com/G-Two/subarulink),
+Apache-2.0, reverse-engineered from the MySubaru mobile app. This repo's
+scripts and docs are MIT, Copyright 2026 Elder Lira.
 
 Username and PIN come from `pass` or env. Never a hardcoded address.
 
@@ -226,3 +230,9 @@ the test process.
 
 Subaru has no public STARLINK API. USA/Canada only. This stack can stop
 working when MySubaru changes. Use at your own risk.
+
+## Attribution
+
+- This project is **not affiliated with Subaru**.
+- MySubaru / STARLINK client: [G-Two/subarulink](https://github.com/G-Two/subarulink) (Apache-2.0).
+- This repository: MIT, Copyright 2026 Elder Lira.
