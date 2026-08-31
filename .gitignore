@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.password-store
+device_id
+secrets
