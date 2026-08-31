@@ -1,0 +1,25 @@
+# Subaru STARLINK MCP — pinned for Grok Bot / CPython 3.13
+#
+# Why subarulink==0.7.19:
+#   Latest subarulink 0.7.21 requires Python >=3.14 and will not install on Python 3.13.
+#   0.7.19 still has g4 + g2 remote start with named climate presets
+#   (Controller.remote_start(vin, preset_name), list_climate_preset_names).
+#   Conceptual git ref: e0d776ae2248478bdb49c79bde69279c2f6c7db1 (install from PyPI).
+#   Skipped from 0.7.21: g2v33 API auto-bump, Crosstrek "Full Cool" seat sanitizer,
+#   240-minute session age check on all API calls (not just remote commands).
+#
+# Official MCP Python SDK: mcp 2.1.1 (MCPServer is the FastMCP successor).
+
+subarulink==0.7.19
+mcp==2.1.1
+mcp-types==2.1.1
+aiohttp==3.14.3
+stdiomask==0.0.6
+pytest==9.1.1
+pytest-asyncio==1.4.0
+anyio==4.14.2
+httpx2==2.12.0
+pydantic==2.13.5
+starlette==1.6.0
+sse-starlette==3.4.8
+uvicorn==0.52.4
